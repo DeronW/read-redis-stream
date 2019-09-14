@@ -37,7 +37,7 @@ function stop() {
     if (independent) redisClient.end(true);
 }
 
-module.exports = async function read(client = "redis://127.0.0.1:6379", stream, callback) {
+module.exports = function read(client = "redis://127.0.0.1:6379", stream, callback) {
     if (!(client instanceof RedisClient)) {
         independent = true;
         client = createClient(client);

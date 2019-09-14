@@ -1,6 +1,6 @@
 {
     "name": "read-redis-stream",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "read stream messasge one by one from redis",
     "keywords": [
         "redis",

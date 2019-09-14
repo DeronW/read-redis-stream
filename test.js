@@ -9,6 +9,7 @@ const testClient = redis.createClient("redis://127.0.0.1:6379");
 const STREAM_ID = "stream-id";
 
 function onMessage(err, data) {
+    console.log(err, data);
     assert.equal(err, null);
     let [key, value] = data;
     assert.equal(key, "some key");
